@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ad Click Page</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background: #0078ff;
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="openAd()">Click Ad</button>
+
+  <script>
+    function openAd() {
+      // Open ad link in the current tab
+      window.location.href = "https://www.revenuecpmgate.com/mcq3yey8r?key=ee90e399d7947cb8158f0c6e3563476d";
+      
+      // After 2 seconds, return to home page
+      setTimeout(() => {
+        window.location.href = window.location.origin + window.location.pathname;
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
