@@ -32,13 +32,13 @@
 
   <script>
     function openAd() {
-      // Open ad link in the current tab
-      window.location.href = "https://www.revenuecpmgate.com/mcq3yey8r?key=ee90e399d7947cb8158f0c6e3563476d";
+      // Open the ad in a new tab
+      window.open(
+        "https://www.revenuecpmgate.com/mcq3yey8r?key=ee90e399d7947cb8158f0c6e3563476d",
+        "_blank"
+      );
       
-      // After 2 seconds, return to home page
-      setTimeout(() => {
-        window.location.href = window.location.origin + window.location.pathname;
-      }, 2000);
+      // Keep the user on the same page (no redirect needed)
     }
   </script>
 </body>
